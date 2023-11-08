@@ -240,7 +240,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./assets/images/resume-img.png)
+  background: url(./assets/images/clipart-resume.jpeg)
     no-repeat center center;
   background-size: cover;
   border: 3px solid var(--mred);
