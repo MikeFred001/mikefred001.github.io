@@ -5,6 +5,7 @@ const resume = document.querySelector('.resume');
 const homeButton = document.querySelector('.home-button');
 const aboutButton = document.querySelector('.about-button');
 const contactButton = document.querySelector('.contact-button');
+const projectsButton = document.querySelector('.projects-button');
 
 const footerLinks = document.getElementsByClassName('footer-link');
 const footerLinkedin = document.querySelector('.footer-linkedin');
@@ -15,24 +16,40 @@ const phoneLink = document.querySelector('.phone-link');
 
 window.addEventListener("scroll", function(event) {
   let scroll = this.scrollY;
+
   if (scrollY < 400) {
     homeButton.classList.add('nav-highlight');
     aboutButton.classList.remove('nav-highlight');
+    projectsButton.classList.remove('nav-highlight');
     contactButton.classList.remove('nav-highlight');
+
     for (let i = 0; i < footerLinks.length; i++) {
       footerLinks[i].style.opacity = '1';
     }
   } else if (scrollY >= 400 && scrollY < 1000) {
       homeButton.classList.remove('nav-highlight');
       aboutButton.classList.add('nav-highlight');
+      projectsButton.classList.remove('nav-highlight');
       contactButton.classList.remove('nav-highlight');
+
       for (let i = 0; i < footerLinks.length; i++) {
         footerLinks[i].style.opacity = '1';
       }
-  } else if (scrollY >= 1000) {
+  } else if (scrollY >= 1000 && scrollY < 2800) {
+    homeButton.classList.remove('nav-highlight');
+    aboutButton.classList.remove('nav-highlight');
+    projectsButton.classList.add('nav-highlight');
+    contactButton.classList.remove('nav-highlight');
+
+    for (let i = 0; i < footerLinks.length; i++) {
+      footerLinks[i].style.opacity = '1';
+    }
+  }  else if (scrollY >= 2800) {
       homeButton.classList.remove('nav-highlight');
       aboutButton.classList.remove('nav-highlight');
+      projectsButton.classList.remove('nav-highlight');
       contactButton.classList.add('nav-highlight');
+
       for (let i = 0; i < footerLinks.length; i++) {
         footerLinks[i].style.opacity = '0';
       }

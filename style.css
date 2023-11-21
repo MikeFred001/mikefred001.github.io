@@ -65,12 +65,11 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  min-width: 275px;
+  min-width: 350px;
 }
 
 ul a li {
-  font-size: 2.25rem;
-
+  font-size: 2rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -117,7 +116,6 @@ main {
   width: 90%;
   height: 5px;
   margin-top: 5px;
-
   animation: redline-load .75s ease-in-out;
 }
 
@@ -184,6 +182,95 @@ main {
 }
 
 
+/* PORTFOLIO PAGE STYLING */
+
+.projects-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.projects-title {
+  margin-bottom: 50px;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  line-height: .7;
+}
+
+.project-subtitle {
+  font-size: 1.4rem;
+  color: var(--mred);
+}
+
+.jobly-title, .jobly-subtitle {
+  text-align: right;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.project-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 125px;
+}
+
+.project-section:last-child {
+  padding-bottom: 0;
+}
+
+.warbler-img {
+  background: url(./assets/images/warbler-landing-page.png)
+  no-repeat center center;
+}
+
+.jobly-img {
+  background: url(./assets/images/jobly1.png)
+  no-repeat center center;
+}
+
+.pixly-img {
+  background: url(./assets/images/pixly1.png)
+  no-repeat center center;
+}
+
+.project-img {
+  height: 400px;
+  width: 700px;
+  border-radius: 10px;
+  background-size: cover;
+  box-shadow: 3px 3px 15px 3px rgba(150, 150, 150, .8);
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+}
+
+.project-body {
+  padding-bottom: 20px;
+}
+
+.techstack-label {
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 1px 1px 1px var(--mred);
+}
+
+.techstack-list {
+  color: var(--mred);
+  text-decoration: auto;
+}
 
 /* CONTACT PAGE STYLING */
 
@@ -192,6 +279,7 @@ main {
   align-items: center;
   width: 100%;
   padding: 70px 0;
+  background-color: var(--moffwhite);
 }
 
 #contact {
@@ -280,6 +368,20 @@ main {
   transform: scale(1.1) translateX(15px);
 }
 
+.fa-linkedin {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 6px 3px;
+  margin-right: 5px;
+  font-size: 1.8rem;
+  transform: translateY(-3px);
+}
+
+.fa-square-phone {
+  transform: scalex(-1) translateY(-2px);
+  font-size: 2.1rem;
+}
 
 
 /* FOOTER STYLING */
