@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Frederickson</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/fontawesome/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/bc1bf75412.js" crossorigin="anonymous"></script>
+
+  <script src="./assets/fontawesome/all.min.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/bc1bf75412.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
   <header>
@@ -74,16 +77,30 @@
 
       <div class="project-text">
         <p class="project-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consequuntur itaque saepe officia sit, nulla commodi aspernatur enim quod nihil excepturi iusto. Quos amet et doloribus est laudantium at voluptatum molestiae magnam ad itaque nemo, alias ducimus hic, vitae quaerat sint voluptates quas. Dolor suscipit nam, sed amet velit distinctio vitae deleniti ipsum tempora porro quo dolorum maxime sit minus rem nemo repudiandae in, ex incidunt. Atque optio aliquam quasi ducimus consequuntur molestiae saepe excepturi mollitia magni dolore ad modi ullam iusto, tempora velit sequi necessitatibus. Ad dolore nobis porro illo possimus animi obcaecati laborum, eius molestiae ipsam nulla cupiditate.
+          Warbler is a fully backend, dynamic social media application. It has
+          fully-integrated authentication and authorization. This, along with
+          the general UI is powered by a Python, Flask, and SQLAlchemy backend.
+          <br>
+          It leverages a relational PostgreSQL database to facilitate "Likes",
+          "Follows", and "Followers". And of course this is all automatically
+          stored on the user's profile page. That way, you can brag about your
+          first 10 followers like I did back in the MySpace days.
+          <br>
+          Other features
+          include a profile-edit page (authorization required), an intelligently
+          populated feed, and of course, the ability to write posts yourself.
         </p>
 
-        <label class="techstack-label">Tech Stack</label>
+        <div class="techstack-wrapper">
+          <label class="techstack-label">Tech Stack</label>
 
-        <ul class="techstack-list">
-          <li class="techstack-item">- Language 1</li>
-          <li class="techstack-item">- Language 2</li>
-          <li class="techstack-item">- Language 3</li>
-        </ul>
+          <ul class="techstack-list">
+            <li class="techstack-item">Python</li>
+            <li class="techstack-item">Flask</li>
+            <li class="techstack-item">SQLAlchemy</li>
+            <li class="techstack-item">PostgreSQL</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -93,16 +110,29 @@
     <div class="project-section">
       <div class="project-text">
         <p class="project-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consequuntur itaque saepe officia sit, nulla commodi aspernatur enim quod nihil excepturi iusto. Quos amet et doloribus est laudantium at voluptatum molestiae magnam ad itaque nemo, alias ducimus hic, vitae quaerat sint voluptates quas. Dolor suscipit nam, sed amet velit distinctio vitae deleniti ipsum tempora porro quo dolorum maxime sit minus rem nemo repudiandae in, ex incidunt. Atque optio aliquam quasi ducimus consequuntur molestiae saepe excepturi mollitia magni dolore ad modi ullam iusto, tempora velit sequi necessitatibus. Ad dolore nobis porro illo possimus animi obcaecati laborum, eius molestiae ipsam nulla cupiditate.
+          Jobly is a company detailing and job application website. Wanna see a
+          list of companies, a particular company, or a company's employees? Our
+          backend API's got you covered. It'll fetch all the data you need from
+          our database while React will render it with stunning visual detail.
+          <br>
+          The website comes stocked with authentication, authorization across the board, and several account features like profile-editing.
+          <br>
+          Looking for
+          a specific type of company or job? Don't worry, we've got a search bar
+          for when you really wanna narrow things down.
         </p>
 
-        <label class="techstack-label">Tech Stack</label>
+        <div class="techstack-wrapper">
+          <label class="techstack-label">Tech Stack</label>
 
-        <ul class="techstack-list">
-          <li class="techstack-item">- Language 1</li>
-          <li class="techstack-item">- Language 2</li>
-          <li class="techstack-item">- Language 3</li>
-        </ul>
+          <ul class="techstack-list">
+            <li class="techstack-item">React</li>
+            <li class="techstack-item">Node</li>
+            <li class="techstack-item">Express</li>
+            <li class="techstack-item">PostgreSQL</li>
+            <li class="techstack-item">AJAX</li>
+          </ul>
+        </div>
       </div>
 
       <div class="project-img jobly-img"></div>
@@ -116,16 +146,28 @@
 
       <div class="project-text">
         <p class="project-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consequuntur itaque saepe officia sit, nulla commodi aspernatur enim quod nihil excepturi iusto. Quos amet et doloribus est laudantium at voluptatum molestiae magnam ad itaque nemo, alias ducimus hic, vitae quaerat sint voluptates quas. Dolor suscipit nam, sed amet velit distinctio vitae deleniti ipsum tempora porro quo dolorum maxime sit minus rem nemo repudiandae in, ex incidunt. Atque optio aliquam quasi ducimus consequuntur molestiae saepe excepturi mollitia magni dolore ad modi ullam iusto, tempora velit sequi necessitatibus. Ad dolore nobis porro illo possimus animi obcaecati laborum, eius molestiae ipsam nulla cupiditate.
+          Pixly here is still a work-in-progress but isn't she beautiful?
+          <br>
+          Pixly is a photo-sharing application. Any user can easily upload photos
+          which we conveniently and automatically store using AWS cloud services.
+          Our database even stores some of the image's metadata!
+          <br>
+          On request, the user can view their photos and other photos that have been uploaded. Even though this is a simpler application,
+          getting files to upload from a React frontend to a Python backend, as
+          well as learning AWS across only 4 days was a satisfying challenge to overcome.
         </p>
 
-        <label class="techstack-label">Tech Stack</label>
+        <div class="techstack-wrapper">
+          <label class="techstack-label">Tech Stack</label>
 
-        <ul class="techstack-list">
-          <li class="techstack-item">- Language 1</li>
-          <li class="techstack-item">- Language 2</li>
-          <li class="techstack-item">- Language 3</li>
-        </ul>
+          <ul class="techstack-list">
+            <li class="techstack-item">React</li>
+            <li class="techstack-item">Python</li>
+            <li class="techstack-item">Flask</li>
+            <li class="techstack-item">PostgreSQL</li>
+            <li class="techstack-item">AWS Cloud Services</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -136,25 +178,61 @@
 
 <div class="contact-wrapper">
   <section id="contact">
-    <div class="contact-section">
       <h1 class=" contact-title title">Contact Me</h1>
 
-      <p class="contact-info"><i class="fa fa-solid fa-mobile"></i><span class="contact-link phone-link">702-375-5865<span class="material-symbols-outlined">content_copy</span></span></p>
+      <div class="contact-btns">
+        <div class="btn-wrapper">
+          <div class="contact-btn phone-btn">
+            <i class="fa fa-solid fa-mobile-screen"></i>
+          </div>
+          <p class="contact-btn-label">Phone</p>
+        </div>
 
-      <p class="contact-info"><i class="fa fa-solid fa-envelope"></i> <a href="mailto:mpfplus@gmail.com"><span class="contact-link">mpfplus@gmail.com<span class="material-symbols-outlined">forward_to_inbox</span></span></a></p>
+        <div class="btn-wrapper">
+          <a href="mailto:mpfplus@gmail.com">
+            <div class="contact-btn">
+              <i class="fa fa-solid fa-envelope"></i>
+            </div>
+          </a>
+          <p class="contact-btn-label">Email</p>
+        </div>
 
-      <p class="contact-info"><i class="fa fa-brands fa-linkedin"></i><a target="_blank" href="https://www.linkedin.com/in/michael-frederickson-junior-developer"><span class="contact-link linkedin">Michael Frederickson<span class="material-symbols-outlined">open_in_new</span></span></a></p>
+        <div class="btn-wrapper">
+          <a target="_blank" href="https://www.linkedin.com/in/michael-frederickson-junior-developer">
+            <div class="contact-btn">
+              <i class="fa fa-brands fa-linkedin"></i>
+            </div>
+          </a>
+          <p class="contact-btn-label">LinkedIn</p>
+        </div>
 
-      <p class="contact-info"><a target="_blank" href="https://github.com/MikeFred001"><i class="fa fa-brands fa-github"></i><span class="contact-link github">MikeFred001<span class="material-symbols-outlined">open_in_new</span></span></a></p>
-    </div>
+        <div class="btn-wrapper">
+          <a target="_blank" href="https://github.com/MikeFred001">
+            <div class="contact-btn">
+              <i class="fa fa-brands fa-github"></i>
+            </div>
+          </a>
+          <p class="contact-btn-label">GitHub</p>
+        </div>
 
-    <div class="resume-wrapper">
-      <p class="resume-label">Resume</p>
-      <div class="resume">
-        <a download="" href="./assets/resume.pdf"><button class="resume-button download-button">Download</button></a>
-        <a target="_blank" href="./assets/resume.pdf"><button class="resume-button print-button">View & Print</button></a>
+        <div class="btn-wrapper">
+          <div class="contact-btn resume-btn">
+            <div class="option-wrapper download-option-wrapper">
+              <a download="" href="./assets/resume.pdf" class="resume-option resume-arrow-down"><i class="fa fa-solid fa-arrow-down"></i></a>
+
+              <p class="resume-option-label download-label">Download</p>
+            </div>
+
+            <div class="option-wrapper view-option-wrapper">
+              <a target="_blank" href="./assets/resume.pdf" class="resume-option resume-magnifying-glass"><i class="fa fa-solid fa-magnifying-glass"></i></a>
+
+              <p class="resume-option-label view-label">View</p>
+            </div>
+            <i class="fa fa-solid fa-file-lines"></i></a>
+          </div>
+          <p class="contact-btn-label">Resume</p>
+        </div>
       </div>
-    </div>
   </section>
 </div>
 

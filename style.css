@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+i {
+  font-family: "Font Awesome 5 Free";
+}
+
 html, body {
   scroll-behavior: smooth;
   width: 100vw;
@@ -197,12 +201,12 @@ main {
 }
 
 .project-title {
-  font-size: 2.2rem;
+  font-size: 3rem;
   line-height: .7;
 }
 
 .project-subtitle {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: var(--mred);
 }
 
@@ -254,6 +258,7 @@ main {
 .project-text {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: 325px;
 }
 
@@ -261,14 +266,23 @@ main {
   padding-bottom: 20px;
 }
 
+.techstack-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: var(--mred);
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px 3px rgba(150, 150, 150, .8);
+}
+
 .techstack-label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: black;
-  text-shadow: 1px 1px 1px var(--mred);
+  margin-bottom: 5px;
 }
 
 .techstack-list {
-  color: var(--mred);
+  color: white;
   text-decoration: auto;
 }
 
@@ -278,13 +292,13 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 70px 0;
+  padding: 50px 0 120px;
   background-color: var(--moffwhite);
 }
 
 #contact {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: flex-start;
   margin: auto;
   width: 72%;
@@ -368,20 +382,153 @@ main {
   transform: scale(1.1) translateX(15px);
 }
 
-.fa-linkedin {
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  padding: 6px 6px 3px;
-  margin-right: 5px;
-  font-size: 1.8rem;
-  transform: translateY(-3px);
+/* CONTACT ICON STYLING --------------------------------------------------- */
+
+.contact-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
 }
 
-.fa-square-phone {
-  transform: scalex(-1) translateY(-2px);
-  font-size: 2.1rem;
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: var(--mred);
+  border: 2px solid var(--moffwhite);
+  outline: 5px solid black;
+  transition: all .3s ease-in-out;
 }
+
+.svg-inline--fa {
+  font-size: 4rem;
+  color: white;
+}
+
+.fa-file-lines {
+  transition: all .3s ease-in-out;
+}
+
+.fa-file-lines:after {
+  content: '\f15c';
+}
+
+.resume-btn {
+  transition: all .4s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-color: red;
+}
+
+.resume-btn:hover {
+  width: 282px;
+  border-radius: 100px;
+}
+
+.resume-btn:hover > .fa-file-lines {
+  opacity: 0;
+}
+
+.resume-btn:hover > .fa-arrow-down,
+.resume-btn:hover > .fa-magnifying-glass {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fa-arrow-down, .fa-magnifying-glass {
+  font-size: 3rem;
+  color: red;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+}
+
+.fa-magnifying-glass {
+  font-size: 2.5rem;
+}
+
+.resume-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.resume-arrow-down {
+  left: 40px;
+}
+
+.resume-magnifying-glass {
+  right: 40px;
+}
+
+.option-wrapper {
+  position: absolute;
+  z-index: 999;
+}
+
+.download-option-wrapper {
+  left: 40px;
+}
+
+.view-option-wrapper {
+  right: 40px;
+}
+
+.resume-btn:hover > div a svg, .resume-btn:hover > div .resume-option {
+  opacity: 1;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-btn-label {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.resume-option-label {
+  color: white;
+  font-size: .8rem;
+  position: absolute;
+  bottom: -3px;
+  text-align: center;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.download-label {
+  left: 13.5px;
+}
+
+.view-label {
+  left: 25px;
+}
+
+.option-wrapper:hover > p {
+  opacity: 1;
+}
+
+.option-wrapper:hover > .resume-option {
+  transform: translateY(-15px);
+}
+
+
+/* CONTACT ICON STYLING --------------------------------------------------- */
 
 
 /* FOOTER STYLING */
