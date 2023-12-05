@@ -226,11 +226,11 @@ main {
   justify-content: space-between;
   flex-direction: row;
   padding-top: 10px;
-  padding-bottom: 125px;
+  margin-bottom: 150px;
 }
 
 .project-section:last-child {
-  padding-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .warbler-img {
@@ -261,10 +261,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   max-width: 325px;
-}
-
-.project-body {
-  padding-bottom: 20px;
 }
 
 .techstack-wrapper {
@@ -400,10 +396,15 @@ main {
   height: 170px;
   width: 170px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: var(--mred);
   border: 2px solid var(--moffwhite);
   outline: 5px solid black;
   transition: all .3s ease-in-out;
+}
+
+.phone-btn > * {
+  font-size: 4rem;
 }
 
 .svg-inline--fa {

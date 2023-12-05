@@ -1,3 +1,5 @@
+"use-strict";
+
 const downloadButton = document.querySelector('.download-button');
 const printButton = document.querySelector('.print-button');
 const resume = document.querySelector('.resume');
@@ -6,6 +8,7 @@ const homeButton = document.querySelector('.home-button');
 const aboutButton = document.querySelector('.about-button');
 const contactButton = document.querySelector('.contact-button');
 const projectsButton = document.querySelector('.projects-button');
+const phoneButton = document.querySelector('.phone-btn');
 
 const footerLinks = document.getElementsByClassName('footer-link');
 const footerLinkedin = document.querySelector('.footer-linkedin');
@@ -56,18 +59,14 @@ window.addEventListener("scroll", function(event) {
   }
 })
 
-resume.addEventListener('mouseover', function() {
-  downloadButton.style.opacity = '1';
-  printButton.style.opacity = '1';
-});
-
-resume.addEventListener('mouseout', function() {
-  downloadButton.style.opacity = '0';
-  printButton.style.opacity = '0';
-});
+footerPhone.addEventListener('click', () => {
+  console.log("CLICKED!");
+})
 
 footerPhone.addEventListener('click', function() {
-  navigator.clipboard.writeText('7023755865');
+  console.log("Footer phone clicked!");
+
+  navigator.clipboard.writeText('702-375-5865');
   footerPhone.textContent = 'Copied!';
   footerPhone.classList.add('copied');
 
@@ -77,13 +76,17 @@ footerPhone.addEventListener('click', function() {
   }, 3000);
 });
 
-phoneLink.addEventListener('click', function() {
-  navigator.clipboard.writeText('7023755865');
-  phoneLink.innerHTML = 'Copied!';
-  phoneLink.classList.add('copied');
 
-  setTimeout(function(){
-    phoneLink.innerHTML = '702-375-5865<span class="material-symbols-outlined">content_copy</span>';
-    phoneLink.classList.remove('copied');
+function phoneButtonEvent() {
+  console.log('CLICK');
+  navigator.clipboard.writeText('702-375-5865');
+  phoneButton.textContent = 'Copied!';
+  phoneButton.style.color = 'white';
+  phoneButton.style.fontSize = "4rem";
+
+  setTimeout(function() {
+    phoneButton.innerHTML = '<i class="fa fa-solid fa-mobile-screen"></i>';
   }, 3000);
-});
+}
+
+phoneButton.addEventListener('click', phoneButtonEvent);
