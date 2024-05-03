@@ -119,7 +119,7 @@ main {
   background-color: var(--mred);
   margin-right: auto;
   width: 90%;
-  height: 5px;
+  height: 20px;
   margin-top: 5px;
   animation: redline-load .75s ease-in-out;
 }
