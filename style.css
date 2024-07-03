@@ -249,12 +249,43 @@ main {
   no-repeat center center;
 }
 
+.repo-btns-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.repo-btn {
+  background-color: var(--mred);
+  border: none;
+  color: white;
+}
+
+.repo-btn-left {
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid white;
+}
+
+.repo-btn-right {
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid white;
+}
+
 .project-img {
   height: 400px;
   width: 700px;
   border-radius: 10px;
   background-size: cover;
   box-shadow: 3px 3px 15px 3px rgba(150, 150, 150, .8);
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+
+.project-img:hover {
+  outline: 4px solid var(--mred);
 }
 
 .project-text {
