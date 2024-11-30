@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Vacaay",
+    "subtitle": "Vacation Planner & Social Media App",
+    "videoUrl": "/videos/vacaayDemo.mp4",
+    "techStack": ["react", "next.js", "postgresql"],
+    "description": "Vacaay is a vacation planner and social media app that allows users to plan their vacations, share their experiences, and connect with other travelers. Users can create a profile, search for destinations, create a travel itinerary, and share their experiences with friends and family. The app also includes a social media feed where users can post photos, videos, and updates about their trips. Vacaay is built with React, Next.js, and PostgreSQL. I worked heavily on this website during my time at Vital Time Tech where I handled everything from site-wide bug fixes to implementing entire new features."
+  },
+  {
+    "title": "Avatar Metal Works",
+    "subtitle": "Workflow & Inventory Management System",
+    "imageUrl": "/images/avatar1.png",
+    "techStack": ["react", "next.js", "graphql", "vite", "zustand"],
+    "description": "Avatar Metal Works is a 100%-custom workflow and inventory management system for a metal fabrication company. The system allows employees to create and manage work orders, track inventory, and provides clear workflow for each item. It looks simple on the outside, but under the hood there's tons of nuance and calculation happening to make sure that the inventory is always up-to-date. At Vital Time Tech, I was the primary developer on this project. Learning GraphQL, Vite, and Zustand on the fly, I was able to not only deliver on features, but also customize them along the way to fit the client's needs."
+  },
+  {
+    "title": "Jobly",
+    "subtitle": "Company Detailing Web App",
+    "imageUrl": "/images/jobly1.png",
+    "techStack": ["react", "node", "express", "postgresql", "ajax"],
+    "description": "Jobly is a company detailing and job application website. Wanna see a list of companies, a particular company, or a company's employees? Our backend API's got you covered. It'll fetch all the data you need from our database while React will render it with stunning visual detail. Jobly features authentication, authorization across the board, and several account features like profile-editing. Looking for a specific type of company or job? Don't worry, we've got a search bar for when you really wanna narrow things down. Building this website was a blast, and taught me a ton about how to structure a full-stack application."
+  },
+  {
+    "title": "Warbler",
+    "subtitle": "Dynamic Social Media App",
+    "imageUrl": "/images/warbler1.png",
+    "techStack": ["python", "flask", "sqlalchemy", "postgresql"],
+    "description": "Warbler is a fully backend, dynamic social media application with fully-integrated authentication and authorization. This, along with the general UI is powered by a Python, Flask, and SQLAlchemy backend. It leverages a relational PostgreSQL database to facilitate \"Likes\", \"Follows\", and \"Followers\". And of course this is all automatically stored on the user's profile page. That way, you can brag about your first 10 followers like I did back in the MySpace days. Other features include a profile-edit page (authorization required), an intelligently populated feed, and of course, the ability to write posts yourself."
+  }
+]
